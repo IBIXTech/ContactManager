@@ -1,6 +1,6 @@
 import "./index.css";
 
-const ContactsList = ({ contacts, toggleFavorite }) => {
+const ContactsList = ({ contacts }) => {
   return (
     <ul className="contacts-list">
       {contacts.map((contact) => (
@@ -12,10 +12,7 @@ const ContactsList = ({ contacts, toggleFavorite }) => {
             <p>📞{contact.phone}</p>
           </div>
 
-          <button
-            className={contact.isFavorite ? "favorite" : ""}
-            onClick={() => toggleFavorite(contact.id)}
-          >
+          <button className={contact.isFavorite ? "favorite" : ""}>
             {contact.isFavorite ? "⭐ Favorite" : "Add Favorite"}
           </button>
         </li>

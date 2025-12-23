@@ -12,9 +12,7 @@ const ContactsList = ({ contacts }) => {
             <p>📞{contact.phone}</p>
           </div>
 
-          <button className={contact.isFavorite ? "favorite" : ""}>
-            {contact.isFavorite ? "⭐ Favorite" : "Add Favorite"}
-          </button>
+          <button>Add Favorite</button>
         </li>
       ))}
     </ul>

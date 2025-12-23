@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* App Container */
+.app-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 24px;
+  background-color: #adc4eb;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 10px 10px 10px #6f6f6fb8;
+}
+
+/* Heading */
+.app-container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1f2933;
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Add Button */
+.input-container button {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Contacts List */
+.contacts-list {
+  list-style: none;
+}
+
+/* Contact Item */
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact Info */
+.contact-item p {
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.contact-item p:last-child {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Favorite Button */
+.contact-item button {
+  padding: 6px 12px;
+  font-size: 13px;
+  border: 1px solid #facc15;
+  background-color: transparent;
+  color: #92400e;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-item button:hover {
+  background-color: #fef3c7;
+}
+
+/* Favorite Active */
+.contact-item button.favorite {
+  background-color: #facc15;
+  color: #78350f;
+  border: none;
+}
